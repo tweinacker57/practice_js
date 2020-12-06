@@ -29,3 +29,14 @@ function max(numbers) {
 console.log(max([5, 4, 8, 1, 2]));
 
 
+function factorial(number) {
+  var result = 1;
+  var currentNumber = number;
+  for (var i = 0; i < number; i++) {
+    result = result * currentNumber;
+    currentNumber = currentNumber - 1;
+  }
+  return result;
+}
+
+console.log(factorial(5));
